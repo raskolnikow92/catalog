@@ -6,5 +6,20 @@
   </welcome-file-list>
   
   <!--Enter your servlet definitions and servlet mappings below-->
-
+<servlet>
+  <servlet-name>accessServlet</servlet-name>
+  <servlet-class>AccessServlet</servlet-class>
+</servlet>
+  <servlet-mapping>
+    <servlet-name>accessServlet</servlet-name>
+    <url-pattern>/access</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>cartServlet</servlet-name>
+    <servlet-class>CartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cartServlet</servlet-name>
+    <url-pattern>/cart</url-pattern>
+  </servlet-mapping>
 </web-app>
